@@ -107,7 +107,7 @@ window.addEventListener('resize', function() {
     if (window.innerWidth <= 740) {
         headerEl.classList.remove('searching')
     }   else {
-        headerEl.classListr.remove('searcing--mobile')
+        headerEl.classList.remove('searcing--mobile')
     }
 })
 //
