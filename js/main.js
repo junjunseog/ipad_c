@@ -190,7 +190,7 @@ ipads.forEach(function(ipad) {
     <h3 class="name">${ipad.name}</h3>
     <p class="tagline">${ipad.tagline}</p>
     <p class="price">₩${ipad.price.toLocaleString('en-US')}부터</p> 
-    <button class="btn">구입하기</button>
+    <a href="./purchase.html"><button class="btn">구입하기</button></a>
     <a href="${ipad.url}" class="link">더 알아보기</a>   
     `
 
