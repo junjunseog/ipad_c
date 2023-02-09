@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPad 10.2 - Apple (KR) - 결제정보</title>
-
+    <title>iPad 10.2 - Apple (KR) - 결제수단</title>
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Apple (KR)">
     <meta property="og:title" content="iPad 10.2">
@@ -27,14 +26,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <!--LINK CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./text.css">
+    <link rel="stylesheet" href="./card.css">
         <!-- JS -->
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script defer src="./text.js" type="module"></script>
+    <script defer src="./card.js" type="module"></script>
 </head>
 <body>
-
+    
      <!-- HEADER -->
      <header>
         <div class="inner">
@@ -132,148 +131,157 @@
         </div>
     </nav>
 
-
     <section>
         <div class="bag">
             <div class="bag-t">
-                <h2>주문하신 제품이 어디로 배송되길 원하십니까?</h2>
-            </div>
-            
-    <div class="insert-title">
-        <h4>이름 및 주소 입력:</h4>
-    </div>
-
-    <form class="row g-3 needs-validation" id="bigbox" novalidate>
-
-        <div class="col-md-6">
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
-                <label for="validationCustom03" class="form-label">성</label>
-                <div class="invalid-feedback">
-                    성을 입력해 주십시오.
-                  </div>
-              </div>
+                <h2>어떻게 결제하시겠습니까?</h2>
             </div>
 
-            <div class="col-md-6">
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
-                    <label for="validationCustom03" class="form-label">이름</label>
-                    <div class="invalid-feedback">
-                        이름을 입력해 주십시오.
-                      </div>
-                  </div>
-                </div>
+        <div class="cardbox">
+            <p>신용 카드 또는 직불 카드, 할부</p>
+        </div>
+        <div class="cardimg">
+            <img src="./image2/card.png" alt="occocard">
 
-                <div class="citycall">
-                <div class="col-md-3">
-                    <label for="validationCustom04" class="form-label"></label>
-                    <select class="form-select" id="validationCustom04" required>
-                      <option selected disabled value="">시/도</option>
-                      <option value="1">강원도</option>
-                      <option value="2">경기도</option>
-                      <option value="3">경상남도</option>
-                      <option value="4">경상북도</option>
-                      <option value="5">전라남도</option>
-                      <option value="6">전라북도</option>
-                      <option value="7">제주도</option>
-                      <option value="8">충청남도</option>
-                      <option value="9">충청북도</option>
-                      <option value="10">서울</option>
-                      <option value="11">부산</option>
-                      <option value="12">대구</option>
-                      <option value="13">인천</option>
-                      <option value="14">광주</option>
-                      <option value="15">대전</option>
-                      <option value="16">울산</option>
-                      <option value="17">세종</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Please enter a valid state.
-                    </div>
-                  </div>
-        
-                  <div class="col-md-6">
-                    <div class="form-floating" id="floatingcore">
+            <form class="row g-3 needs-validation" id="bigbox" novalidate>
+
+                <h4>카드 번호</h4>
+
+                <div class="cardbig">
+                <div class="col-md-6">
+                    <div class="form-floating">
                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
-                        <label for="validationCustom03" class="form-label">지역/도시</label>
+                        <label for="validationCustom03" class="form-label">****</label>
                         <div class="invalid-feedback">
-                            시/도를 입력하십시오.
+                            카드번호를 입력해주세요.
                           </div>
                       </div>
                     </div>
-                </div>
-
+        
                     <div class="col-md-6">
                         <div class="form-floating">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
-                            <label for="validationCustom03" class="form-label">우편번호</label>
+                            <label for="validationCustom03" class="form-label">****</label>
                             <div class="invalid-feedback">
-                                우편번호를 입력하십시오.
                               </div>
                           </div>
                         </div>
-                    
-
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
-                                <label for="validationCustom03" class="form-label">건물 번지, 이름 또는 거리 이름</label>
-                                <div class="invalid-feedback">
-                                    상세 주소를 입력해 주십시오.
+        
+        
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                                    <label for="validationCustom03" class="form-label">****</label>
+                                    <div class="invalid-feedback">
+                                      </div>
                                   </div>
-                              </div>
-                            </div>
+                                </div>
+                            
+        
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                                        <label for="validationCustom03" class="form-label">****</label>
+                                        <div class="invalid-feedback">
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
 
-                         <div class="col-md-6">
-                             <div class="form-floating">
-                                <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="대한민국" disabled>
-                                <label for="validationCustom03" class="form-label">국가/지역</label>
-                              </div>
-                        </div>
+                                <h4>만료</h4>
 
 
-                        <h4 class="callme">연락처 정보를 알려주십시오.</h4>
+                                <div class="cardbig">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                                            <label for="validationCustom03" class="form-label">**</label>
+                                            <div class="invalid-feedback">
+                                                예시 ) 01 / 23
+                                              </div>
+                                          </div>
+                                        </div>
+                            <p>/</p>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                                                <label for="validationCustom03" class="form-label">**</label>
+                                                <div class="invalid-feedback">
+                                                  </div>
+                                              </div>
+                                            </div>
+                                            </div>
 
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
-                                <label for="validationCustom03" class="form-label">이메일 주소</label>
-                                <div class="invalid-feedback">
-                                    올바른 이메일 주소를 입력해 주십시오.
-                                  </div>
-                              </div>
-                            </div>
+                                <h4>비밀번호 (앞 두자리)</h4>
 
-                         <div class="col-md-6">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
-                                <label for="validationCustom03" class="form-label">휴대폰 번호</label>
-                                <div class="invalid-feedback">
-                                    올바른 휴대폰 번호를 입력해 주십시오.
-                                  </div>
-                                  </div>
-                           </div>
+                                <div class="moti">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                                        <label for="validationCustom03" class="form-label">**</label>
+                                        <div class="invalid-feedback">
+                                            앞의 두자리 수를 입력하세요.
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
 
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit"><p>저장</p></button>
+                                <h4>생년월일</h4>
+
+                                <div class="moti2">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                                            <label for="validationCustom03" class="form-label"></label>
+                                            <div class="invalid-feedback">
+                                                예시 ) 19980415
+                                              </div>
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                    <h4>카드유형</h4>
+
+                                    <div class="toggle">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                                        <label class="form-check-label" for="validationFormCheck2">법인</label>
+                                        <div class="invalid-feedback">카드 유형을 선택해주세요.</div>
+                                      </div>
+                                      <div class="form-check mb-3">
+                                        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                                        <label class="form-check-label" for="validationFormCheck3">개인</label>
+                                      </div>
+                                    </div>
+
+        
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit"><p>주문 완료</p></button>
+                </div>
+              </form>
         </div>
-      </form>
 
-      <div class="purchase">
-        <a href="./card.html">
-        <button>
-          <p>결제 페이지로 이동</p>
-        </button>
-      </a>
-      </div>
+        <div class="purchase">
+            <a href="./goal.html">
+            <button>
+              <p>주문 검토하기</p>
+            </button>
+          </a>
+          </div>
 
-      <div class="bag-line"></div>
-      <p class="bag-help">도움이 더 필요하신가요? 080-330-8877 번호로 문의하세요.</p>
-      <div class="bag-line"></div>
+        <div class="bag-line"></div>
+
+        <div class="pool">
+            <p>* 실제 사이트가 아닌 사용성 평가를 위해 코딩된 페이지 이므로 카드정보는 임의로 제작해 제공하였습니다.</p>
+            <p>* 주문을 완료하시면 필요에 따라 KG이니시스 및 은행 사이트로 이동합니다. </p>
+            <p>* 주문액이 5만원 이상인 경우 할부 옵션을 선택하실 수 있습니다. </p>
+            <p>* 결제를 마치면 App Store로 자동 돌아옵니다. </p>
+        </div>
+
     </section>
 
-    <!--FOOTER-->
+
+     <!--FOOTER-->
 <footer>
     <div class="inner">
 

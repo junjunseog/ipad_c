@@ -701,7 +701,6 @@ nav .menu li.active:hover a {
     }
 }
 
-
 .bag-t h2 {
     text-align: center;
     font-weight: 600;
@@ -710,103 +709,13 @@ nav .menu li.active:hover a {
     line-height: 1.6;
     margin-top: 30px;
 }
-.insert-title {
-    margin-left: 25px;
-    font-weight: 500;
-    font-size: 22px;
-    margin-top: 15px;
-    margin-right: 25px;
-}
-.form-floating {
-    margin-top: 25px;
-}
-.form-control {
-    border-radius: 12px;
-    height: 30px;
-}
-.lb-name {
-    font-size: 15px;
-    color: var(--color-font-middlegray);
-}
-.insert-location {
-    display: flex;
-}
-#form-select {
-    margin-left: 25px;
-}
-#form-map {
-    margin-left: 25px;
-}
-#floatingTextarea3 {
-    width: 226px;
-}
-.form-select {
-    border-radius: 12px;
-    height: 60px;
-}
-.momnet {
-    margin-right: 25px;
-}
-.moment2 {
-    margin-right: 25px;
-}
 
-#momnet-korea {
-    margin-left: 25px;
-    cursor: none;
-}
-.callme {
-    margin-top: 70px;
-}
-.bag-line {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: .5px solid var(--color-border);
-}
-.delivery {
-    margin-left: 25px;
-}
-.delivery a {
-    color: var(--color-link);
-}
-.delivery a:hover {
-    text-decoration: underline;
-}
-#bigbox {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-.form-label {
-    color: var(--color-font-middlegray);
-}
-.form-floating .form-control {
-    border-radius: 12px;
-    height: 60px;
-}
-.citycall {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0;
-}
-#floatingcore {
-    margin-left: 35px;
-    transform: translate(0px, -8px);
-}
-#validationCustom04 {
-    width: 150px;
-}
-.col-md-6 {
-    padding: 0;
-}
 .purchase {
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 30px;
-    display: none;
-}
-.hiphop {
-    display: block;
-    transition: .4s;
+    margin-bottom: 80px;
+
 }
 .purchase button {
     width: 100%;
@@ -822,21 +731,6 @@ nav .menu li.active:hover a {
     color: var(--color-white);
 }
 
-.col-12 button {
-    margin-top: 45px;
-    margin-bottom: 40px;
-    height: 50px;
-    width: 50%;
-    border-radius: 12px;
-}
-.col-12 button p {
-    margin: 0 auto;
-    font-size: 16px;
-}
-.bag-help {
-    font-size: 14px;
-    margin-left: 25px;
-}
 /*FOOTER*/
 footer {
     background-color: var(--color-section);

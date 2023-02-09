@@ -1,7 +1,5 @@
 import navigations from '../data/navigations.js'
 
-
-
 //장바구니
 const basketStarterEl = document.querySelector('header .basket-starter');
 const basketEl = basketStarterEl.querySelector('header .basket');
@@ -137,30 +135,7 @@ function hideNavMenu () {
     navEl.classList.remove('menuing')
 }
 
-
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-    'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  })()
-
-
-  const navigationsEl = document.querySelector('footer .navigations')
+const navigationsEl = document.querySelector('footer .navigations')
 navigations.forEach(function(nav) {
     const mapEl = document.createElement('div')
     mapEl.classList.add('map')
@@ -186,21 +161,3 @@ navigations.forEach(function(nav) {
 
     navigationsEl.append(mapEl)
 })
-
-const btsEl = document.querySelector('.col-12')
-const nextEl = document.querySelector('.purchase')
-
-btsEl.addEventListener('click', function() {
-    if (nextEl.classList.contains('hiphop')) {
-        hideNextBtn ()
-    }   else {
-        showNextBtn ()
-    }
-})
-
-function showNextBtn () {
-    nextEl.classList.add('hiphop')
-}
-function hideNextBtn () {
-    nextEl.classList.remove('hiphop')
-}

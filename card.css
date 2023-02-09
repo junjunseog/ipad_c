@@ -701,7 +701,6 @@ nav .menu li.active:hover a {
     }
 }
 
-
 .bag-t h2 {
     text-align: center;
     font-weight: 600;
@@ -710,93 +709,95 @@ nav .menu li.active:hover a {
     line-height: 1.6;
     margin-top: 30px;
 }
-.insert-title {
-    margin-left: 25px;
-    font-weight: 500;
-    font-size: 22px;
-    margin-top: 15px;
-    margin-right: 25px;
-}
-.form-floating {
-    margin-top: 25px;
-}
-.form-control {
-    border-radius: 12px;
-    height: 30px;
-}
-.lb-name {
-    font-size: 15px;
-    color: var(--color-font-middlegray);
-}
-.insert-location {
-    display: flex;
-}
-#form-select {
-    margin-left: 25px;
-}
-#form-map {
-    margin-left: 25px;
-}
-#floatingTextarea3 {
-    width: 226px;
-}
-.form-select {
-    border-radius: 12px;
-    height: 60px;
-}
-.momnet {
-    margin-right: 25px;
-}
-.moment2 {
-    margin-right: 25px;
-}
-
-#momnet-korea {
-    margin-left: 25px;
-    cursor: none;
-}
-.callme {
-    margin-top: 70px;
-}
-.bag-line {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: .5px solid var(--color-border);
-}
-.delivery {
-    margin-left: 25px;
-}
-.delivery a {
-    color: var(--color-link);
-}
-.delivery a:hover {
-    text-decoration: underline;
-}
-#bigbox {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-.form-label {
-    color: var(--color-font-middlegray);
-}
-.form-floating .form-control {
-    border-radius: 12px;
-    height: 60px;
-}
-.citycall {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0;
-}
-#floatingcore {
+.cardbox {
+    margin-top: 20px;
     margin-left: 35px;
-    transform: translate(0px, -8px);
+    margin-right: 35px;
+    margin-bottom: 40px;
+    border: 2px solid var(--color-border);
+    border-radius: 12px;
+    height: 65px;
 }
-#validationCustom04 {
-    width: 150px;
+.cardbox p {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    padding: 19px;
 }
-.col-md-6 {
-    padding: 0;
+.to {
+    border: 2px solid var(--color-link);
+    transition: .4s;
+}
+.cardimg {
+    display: none;
+   /*
+    visibility: hidden;
+    opacity: 0;
+    */
+}
+.call {
+    display: block;
+    transition: .3s;
+    /*
+    visibility: visible;
+    opacity: 1;
+    transition: .2s;
+    */
+}
+.cardimg img {
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.cardbig {
+    display: flex;
+}
+.cardbig .col-md-6 .form-floating {
+    margin: 0 auto;
+}
+.cardbig .col-md-6 .form-floating .form-control {
+    width: 83px;
+    height: 45px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.cardimg h4 {
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.cardbig p {
+    font-size: 30px;
+    color: var(--color-font-middlegray);
+}
+.moti .col-md-6 .form-floating .form-control {
+    width: 70px;
+    height: 45px;
+    margin-left: 10px;
+}
+.moti2 .col-md-6 .form-floating .form-control {
+    width: 140px;
+    height: 45px;
+    margin-left: 10px;
+}
+.toggle {
+    display: flex;
+    margin-left: 20px;
+    gap: 18px;
+}
+.toggle .form-check .form-check-label {
+    transform: translate(3px, 4px);
+}
+.col-12 {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.col-12 button {
+    width: 140px;
+    height: 40px;
+}
+.col-12 p {
+    font-size: 16px;
+    margin: 0;
 }
 .purchase {
     margin-left: 30px;
@@ -822,20 +823,19 @@ nav .menu li.active:hover a {
     color: var(--color-white);
 }
 
-.col-12 button {
-    margin-top: 45px;
+.bag-line {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    border: .5px solid var(--color-border);
+}
+
+.pool {
+    margin-top: 20px;
     margin-bottom: 40px;
-    height: 50px;
-    width: 50%;
-    border-radius: 12px;
-}
-.col-12 button p {
-    margin: 0 auto;
-    font-size: 16px;
-}
-.bag-help {
-    font-size: 14px;
     margin-left: 25px;
+}
+.pool p {
+    font-size: 12px;
 }
 /*FOOTER*/
 footer {
