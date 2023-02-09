@@ -702,111 +702,117 @@ nav .menu li.active:hover a {
 }
 
 
-.bag {
-    max-width: 410px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.bag-t {
-    padding-top: 40px;
-}
-.bag h1 {
+.bag-t h2 {
+    text-align: center;
     font-weight: 600;
-    text-align: center;
-    line-height: 1.5;
-    margin-top: 45px;
-}
-.bag h2 {
-    font-weight: 600;
-    line-height: 1.9;
-    text-align: center;
-}
-.bag h3 {
-    text-align: center;
-    margin-top: 40px;
-    font-weight: 600;
-}
-#demo4 {
-    font-weight: 500;
-    text-align: center;
-    line-height: 1.5;
-    font-size: 24px;
-}
-.bag h6 {
-    line-break: 1.7;
-    font-weight: 400;
-    color: rgba(0, 0, 0, .6);
-    font-size: 14px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 25px;
-}
-.bag-btn button {
-    background-color: var(--color-link);
-    width: 340px;
-    border-radius: 8px;
-    border: 3px solid var(--color-link);
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    height: 40px;
-}
-.bag-btn button p {
-    color: #fff;
-    margin: 0;
-}
-.bag-line {
-    margin-top: 130px;
-    margin-bottom: 30px;
-    border: .5px solid var(--color-border);
-}
-.bag-line2 {
-    margin-bottom: 30px;
-    border: .5px solid var(--color-border);
-}
-.bag-line3 {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    border: .5px solid var(--color-border);
-}
-.bag-stage .imgstage img {
-    margin: 0 auto;
+    font-size: 30px;
     padding: 30px;
-}
-
-.loginform {
-    width: 90%;
-    margin: 0 auto;
+    line-height: 1.6;
     margin-top: 30px;
-    margin-bottom: 70px;
 }
-.form-check {
-    position: absolute;
-    transform: translate(148px, 0px);
+.insert-title {
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-right: 25px;
 }
-.form-check-label {
-    text-align: center;
-    transform: translate(0px, 4px);
-    font-size: 14px;
-}
-.bag a {
-    font-size: 12px;
-    text-align: center;
-    display: block;
-    margin-top: 130px;
-    color: var(--color-link);
-}
-.bag a:hover {
-    text-decoration: underline;
+.form-floating {
+    margin-top: 25px;
 }
 .form-control {
-    border-radius: 10px;
+    border-radius: 12px;
+    height: 30px;
 }
-#floatingPassword {
-    border-radius: 10px;
+.lb-name {
+    font-size: 15px;
+    color: var(--color-font-middlegray);
+}
+.insert-location {
+    display: flex;
+}
+#form-select {
+    margin-left: 25px;
+}
+#form-map {
+    margin-left: 25px;
+}
+#floatingTextarea3 {
+    width: 226px;
+}
+.form-select {
+    border-radius: 12px;
+    height: 60px;
+}
+.momnet {
+    margin-right: 25px;
+}
+.moment2 {
+    margin-right: 25px;
 }
 
-
+#momnet-korea {
+    margin-left: 25px;
+    cursor: none;
+}
+.callme {
+    margin-top: 70px;
+}
+.bag-line {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: .5px solid var(--color-border);
+}
+.delivery {
+    margin-left: 25px;
+}
+.delivery a {
+    color: var(--color-link);
+}
+.delivery a:hover {
+    text-decoration: underline;
+}
+#bigbox {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.form-label {
+    color: var(--color-font-middlegray);
+}
+.form-floating .form-control {
+    border-radius: 12px;
+    height: 60px;
+}
+.citycall {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+#floatingcore {
+    margin-left: 35px;
+    transform: translate(0px, -8px);
+}
+#validationCustom04 {
+    width: 150px;
+}
+.col-md-6 {
+    padding: 0;
+}
+.col-12 button {
+    margin-top: 45px;
+    margin-bottom: 40px;
+    height: 50px;
+    width: 100%;
+    border-radius: 12px;
+}
+.col-12 button p {
+    margin: 0 auto;
+    font-size: 16px;
+}
+.bag-help {
+    font-size: 14px;
+    margin-left: 25px;
+}
 /*FOOTER*/
 footer {
     background-color: var(--color-section);

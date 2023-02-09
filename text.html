@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPad 10.2 - Apple (KR) - 구입</title>
+    <title>iPad 10.2 - Apple (KR) - 결제정보</title>
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Apple (KR)">
@@ -27,16 +27,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <!--LINK CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./text.css">
         <!-- JS -->
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script defer src="./input.js" type="module"></script>
-
+    <script defer src="./text.js" type="module"></script>
 </head>
 <body>
-      <!-- HEADER -->
-      <header>
+
+     <!-- HEADER -->
+     <header>
         <div class="inner">
 
             <ul class="menu">
@@ -132,105 +132,142 @@
         </div>
     </nav>
 
+
     <section>
         <div class="bag">
             <div class="bag-t">
-                <h2>주문하신 제품을 어떻게 받으시겠습니까?</h2>
+                <h2>주문하신 제품이 어디로 배송되길 원하십니까?</h2>
+            </div>
+            
+    <div class="insert-title">
+        <h4>이름 및 주소 입력:</h4>
+    </div>
+
+    <form class="row g-3 needs-validation" id="bigbox" novalidate>
+
+        <div class="col-md-6">
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                <label for="validationCustom03" class="form-label">성</label>
+                <div class="invalid-feedback">
+                    성을 입력해 주십시오.
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                    <label for="validationCustom03" class="form-label">이름</label>
+                    <div class="invalid-feedback">
+                        이름을 입력해 주십시오.
+                      </div>
+                  </div>
                 </div>
 
-                <div class="column large-6 small-12 large-centered rs-fulfillment-options" id="superbox">
-                    <div class="as-buttongroup">
-                        <a href="javascript:void(0)">
-                        <div class="as-buttongroup-item large-6">
-                            <label for="fulfillmentOptionButtonGroup0" class="as-buttongroup-button large-12">
-                                <img src="./image2/gift.png" alt="gift" class="btnimg">
-                                <div class="btnfont-1">배송을 원합니다.</div>
-                            </label>
-                        </div>
-                          </a>
-                          <a href="javascript:void(0)">
-                            <div class="as-buttongroup-item2 large-6">
-                                <label for="fulfillmentOptionButtonGroup0" class="as-buttongroup-button large-12">
-                                    <img src="./image2/bag.png" alt="bag" class="btnimg2">
-                                    <div class="btnfont">직접 픽업하겠습니다.</div>
-                                </label>
-                            </div>
-                         </a>
+                <div class="citycall">
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label"></label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected disabled value="">시/도</option>
+                      <option value="1">강원도</option>
+                      <option value="2">경기도</option>
+                      <option value="3">경상남도</option>
+                      <option value="4">경상북도</option>
+                      <option value="5">전라남도</option>
+                      <option value="6">전라북도</option>
+                      <option value="7">제주도</option>
+                      <option value="8">충청남도</option>
+                      <option value="9">충청북도</option>
+                      <option value="10">서울</option>
+                      <option value="11">부산</option>
+                      <option value="12">대구</option>
+                      <option value="13">인천</option>
+                      <option value="14">광주</option>
+                      <option value="15">대전</option>
+                      <option value="16">울산</option>
+                      <option value="17">세종</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please enter a valid state.
+                    </div>
+                  </div>
+        
+                  <div class="col-md-6">
+                    <div class="form-floating" id="floatingcore">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                        <label for="validationCustom03" class="form-label">지역/도시</label>
+                        <div class="invalid-feedback">
+                            시/도를 입력하십시오.
+                          </div>
+                      </div>
                     </div>
                 </div>
-                <div class="p-box">
-                <p class="p-class">가까운 매장 표시 :<a href="javascript:void(0)">#####</a></p>
-                </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                            <label for="validationCustom03" class="form-label">우편번호</label>
+                            <div class="invalid-feedback">
+                                우편번호를 입력하십시오.
+                              </div>
+                          </div>
+                        </div>
+                    
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                                <label for="validationCustom03" class="form-label">건물 번지, 이름 또는 거리 이름</label>
+                                <div class="invalid-feedback">
+                                    상세 주소를 입력해 주십시오.
+                                  </div>
+                              </div>
+                            </div>
+
+                         <div class="col-md-6">
+                             <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="대한민국" disabled>
+                                <label for="validationCustom03" class="form-label">국가/지역</label>
+                              </div>
+                        </div>
 
 
-                <div class="bag-line"></div>
+                        <h4 class="callme">연락처 정보를 알려주십시오.</h4>
 
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                                <label for="validationCustom03" class="form-label">이메일 주소</label>
+                                <div class="invalid-feedback">
+                                    올바른 이메일 주소를 입력해 주십시오.
+                                  </div>
+                              </div>
+                            </div>
+
+                         <div class="col-md-6">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                                <label for="validationCustom03" class="form-label">휴대폰 번호</label>
+                                <div class="invalid-feedback">
+                                    올바른 휴대폰 번호를 입력해 주십시오.
+                                  </div>
+                                  </div>
+                           </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit"><p>결제 페이지 이동</p></button>
         </div>
+      </form>
 
-        <div class="stage-w">
-            <div class="total-title">재고가 있으며, 배송 준비가 끝났습니다.</div>
-        <div class="total-row">
-            <div class="total-off">
-            <div class="total-in">
-            <div class="total1"><img src="./image2/buy-ipad.jpeg" alt="redapple"></div>
-            <div class="total2">iPad 10.2 Wi-Fi 64GB<br>
-        <a href="javascript:void(0)">더 알아보기 ></a></div>
-            </div>
-        </div>
-        </div>
-        <p class="stage-pp">배송 방법 : </p>
-        <div class="form-floating" id="stage-btn">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">배송 : 익일로부터 3일 소요</label>
-          </div>
-        </div>
-
-                <div class="bag-line"></div>
-
-                <div class="bag-btn">
-                    <a href="./text.html">
-                    <button type="submit">
-                        <p>배송 주소까지 계속</p>
-                    </button>
-                </a>
-                </div>
-
-                <div class="bag-line"></div>
+      <div class="bag-line"></div>
+      <p class="bag-help">도움이 더 필요하신가요? 080-330-8877 번호로 문의하세요.</p>
+      <div class="bag-line"></div>
     </section>
 
-    
-<!--FOOTER-->
+    <!--FOOTER-->
 <footer>
     <div class="inner">
-        <div class="buy-info">
-            <div>
-                <img src="./images/buy-info-box.svg" alt="무료 익일 배송 Icon" class="icon">
-                <h3>업무일 기준 무료 익일 배송</h3>
-                <p>
-                    오후 3시 이전에 주문된<br>
-                    재고 보유 제품에 한합니다. 
-                </p>
-                <a href="javascript:void(0)" class="link">더 알아보기</a>
-            </div>
-            <div>
-                <img src="./images/buy-info-won.svg" alt="금융 혜택 Icon" class="icon">
-                <h3>금융 혜택</h3>
-                <p>
-                    무이자 할부를 통해 Apple 제품을<br>
-                    부담 없이 구매하실 수 있습니다. 
-                </p>
-                <a href="javascript:void(0)" class="link">더 알아보기</a>
-            </div>
-            <div>
-                <img src="./images/buy-info-engrave.svg" alt="각인 Icon" class="icon">
-                <h3>진정 자신만의 것으로</h3>
-                <p>
-                    자신의 이름이나 개성 있는 문구를<br>
-                    iPad에 무료로 각인할 수 있습니다. 
-                </p>
-                <a href="javascript:void(0)" class="link">더 알아보기</a>
-            </div>
-        </div>
 
 
         <div class="warning">
