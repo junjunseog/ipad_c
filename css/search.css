@@ -1,0 +1,373 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(234, 62%, 56%);
+    --icon-color: hsl(234, 12%, 24%);
+    --body-color: hsl(234, 48%, 97%);
+    --container-color: hsl(234, 100%, 99%);
+  }
+
+
+body {
+    max-width: 500px;
+    height: 100vh;
+    background-color: #353535;
+    position: relative;
+}
+.container {
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.container .item {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    display: flex;
+    height: 35px;
+}
+.container .item img {
+    width: 75px;
+}
+
+.inner {
+    max-width: 1020px;
+    margin: 0 auto;
+    position: relative;
+    width: 370px;
+}
+
+.search {
+    max-width: 2000px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-top: 17px;
+    margin-left: 80px;
+}
+
+.search .textfield {
+    background-color: #ffffff;
+    border-radius: 24px;
+    border: 1px solid #5f6368;
+}
+
+.search .textfield:hover {
+    background-color: #ffffff;
+    border: 1px solid #fff;
+}
+
+.search input {
+    width: 100%;
+    height: 34px;
+    padding: 0 40px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: 13px;
+    color: #5f6368;
+}
+
+.search .search-icon {
+    width: 14px;
+    height: 18px;
+    background-image: url(./images/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    opacity: 1;
+}
+
+.search .search-closer {
+    width: 14px;
+    height: 18px;
+    background-image: url(./images/search-closer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    opacity: .4;
+    cursor: pointer;
+}
+
+.search .search-closer:hover {
+    opacity: 1;
+}
+
+nav {
+    background-color: #353535;
+    border-bottom: 1px solid #5f6368;
+}
+nav .in {
+    max-width: 500px;
+    margin: 0 auto;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+nav .menu {
+    flex-grow: 1;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+nav .menu li a {
+    margin: 6px;
+    display: flex;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+}
+nav .menu li a img {
+    padding-left: 2px;
+}
+nav .menu li:hover a {
+    color: #fff;
+}
+.result {
+    color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: space-between;
+    line-height: 43px;
+    min-width: 500px;
+    position: absolute;
+    top: 95px;
+    left: 30px;
+}
+.result .status {
+    overflow: hidden;
+    font-size: 12px;
+}
+.btn button {
+    border-radius: 50px;
+    background-color: #353535;
+    color: #fff;
+    position: absolute;
+    top: 140px;
+    left: 30px;
+}
+.innerbox {
+    height: 170px;
+    display: flex;
+}
+.innerbox .pagebox img {
+    width: 42px;
+    display: block;
+    position: absolute;
+    transform: translate(20px, 70px);
+}
+.innerbox .pageword a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: absolute;
+    transform: translate(70px,77px);
+    font-size: 12px;
+}
+.innerbox .pageurl a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .6);
+    display: block;
+    position: absolute;
+    transform: translate(70px, 92px);
+    font-size: 12px;
+}
+.innerbox .pagetitle a {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    transform: translate(30px, 115px);
+    font-size: 24px;
+}
+.innerbox .pagenote {
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    transform: translate(30px, 142px);
+    font-weight: 300;
+}
+.innerbox .pagesystem1 a, 
+.innerbox .pagesystem2 a,
+.innerbox .pagesystem3 a,
+.innerbox .pagesystem4 a {
+    text-decoration: none;
+}
+.innerbox .pagesystem1 a {
+    display: block;
+    position: absolute;
+    transform: translate(30px, 170px);
+    font-size: 12px;
+}
+.innerbox .pagesystem2 a {
+    display: block;
+    position: absolute;
+    transform: translate(90px, 170px);
+    font-size: 12px;
+}
+.innerbox .pagesystem3 a {
+    display: block;
+    position: absolute;
+    transform: translate(110px, 170px);
+    font-size: 12px;
+}
+.innerbox .pagesystem4 a {
+    display: block;
+    position: absolute;
+    transform: translate(210px, 170px);
+    font-size: 12px;
+}
+.innerbox .pagesystem5 {
+    display: block;
+    position: absolute;
+    transform: translate(30px, 170px);
+    color: rgba(255, 255, 255, .5);
+    font-size: 12px;
+}
+.innerbox a:hover {
+    text-decoration: underline;
+}
+.innerbox .pagesample a img {
+    width: 70px;
+    display: block;
+    position: absolute;
+    transform: translate(345px, 67px);
+}
+
+
+/*=============== BASE ===============*/
+.add-on {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    position: relative;
+    bottom: 350px;
+
+  }
+
+  /*=============== BUTTON ===============*/
+.add-on .floating {
+    height: 50vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .add-on .floating__container {
+    position: relative;
+  
+  }
+  
+  .add-on .floating__toggle,
+  .add-on .floating__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .add-on .floating__toggle {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: -6px -6px 24px hsl(#353535, 100%, 100%),
+                6px 6px 24px hsl(#353535, 12%, 24%),
+                inset 6px 6px 24px hsl(#353535, 12%, 24%),
+                inset -6px -6px 24px hsl(#353535, 12%, 24%);
+    transition: box-shadow .3s ease-in-out, transform .3s;
+  }
+  
+  .add-on .floating__toggle img {
+    transition: transform .8s ease-in-out;
+  }
+  
+  .add-on .floating__toggle:hover {
+    box-shadow: 6px 6px 24px hsl(#353535, 0%, 0%),
+                -6px -6px 24px hsl(#353535, 48%, 87%),
+                inset -6px -6px 24px hsl(#353535, 48%, 97%),
+                inset 6px 6px 24px hsl(#353535, 48%, 87%);
+    transform: scale(.95);
+  }
+  
+  .add-on .floating__icon,
+  .add-on .floating__link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .add-on .floating__icon {
+    font-size: 1rem;
+    box-shadow: -4px -4px 16px hsl(#353535, 48%, 97%),
+                4px 4px 16px hsl(#353535, 48%, 90%),
+                inset 4px 4px 16px hsl(#353535, 48%, 97%),
+                inset -4px -4px 16px hsl(#353535, 48%, 90%);
+    transition: box-shadow .3s ease-in-out;
+  }
+  
+  .add-on .floating__icon:hover {
+    box-shadow: 4px 4px 16px hsl(#353535, 48%, 97%),
+                -4px -4px 16px hsl(#353535, 48%, 90%),
+                inset -4px -4px 16px hsl(#353535, 48%, 97%),
+                inset 4px 4px 16px hsl(#353535, 48%, 90%);;
+  }
+  
+  .add-on .floating__link {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    opacity: 0;
+    transition: transform .8s ease-in-out, opacity .6s;
+    z-index: 1;
+  }
+  
+  .add-on .floating__link:nth-child(1) {
+    transition-delay: .2s;
+  }
+  
+  .add-on .floating__link:nth-child(2) {
+    transition-delay: .4s;
+  }
+  
+  .add-on .floating__link:nth-child(3) {
+    transition-delay: .6s;
+  }
+  
+  .add-on .floating__link:nth-child(4) {
+    transition-delay: .8s;
+  }
+  /* Rotate toggle */
+  .active.floating__toggle img {
+    transform: rotate(360deg);
+  }
+  
+  /* Move icons */
+  
+  .active ~ ul .floating__link {
+    opacity: 1;
+  }
+  
+  .active ~ ul .floating__link:nth-child(1) {
+    transform: translate(3.5rem, -3.5rem);
+  }
+  
+  .active ~ ul .floating__link:nth-child(2) {
+    transform: translate(-3.5rem, -3.5rem);
+  }
+  
+  .active ~ ul .floating__link:nth-child(3) {
+    transform: translate(3.5rem, 3.5rem);
+  }
+  
+  .active ~ ul .floating__link:nth-child(4) {
+    transform: translate(-3.5rem, 3.5rem);
+  }
+  
