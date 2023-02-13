@@ -190,10 +190,9 @@ navigations.forEach(function(nav) {
 const btsEl = document.querySelector('.col-12')
 const nextEl = document.querySelector('.purchase')
 
-btsEl.addEventListener('click', function(event) {
+btsEl.addEventListener('click', function() {
     if (nextEl.classList.contains('hiphop')) {
         hideNextBtn ()
-        event.stopPropagation()
     }   else {
         showNextBtn ()
     }
