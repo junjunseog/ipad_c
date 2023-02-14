@@ -7,7 +7,9 @@
     --body-color: hsl(234, 48%, 97%);
     --container-color: hsl(234, 100%, 99%);
   }
-
+button a {
+  text-decoration: none;
+}
 
 body {
     max-width: 500px;
@@ -241,6 +243,118 @@ nav .menu li:hover a {
     transform: translate(345px, 67px);
 }
 
+.semi-box1 {
+  visibility: hidden;
+  transition: .4s;
+  opacity: 0;
+}
+.bar1 {
+  visibility: visible;
+  opacity: 1;
+}
+.semi-post {
+  width: 220px;
+  font-size: 12px;
+  color: #202124;
+}
+.semi-post button {
+  transform: translate(28px,-185px);
+  height: 50px;
+  border-radius: 15px;
+  width: 300px;
+  background-color: #ecf2ff;
+  border: 2px solid #ecf2ff;
+}
+.semi-post button a {
+  color: #202124;
+}
+.semi-box2 {
+  visibility: hidden;
+  opacity: 0;
+  transition: .7s;
+  display: flex;
+}
+.semi-box2 .more-box {
+  width: 280px;
+  height: 140px;
+  background-color: #ecf2ff;
+  transform: translate(-87px, -110px);
+  border-radius: 20px;
+  display: flex;
+}
+.front {
+  flex-direction: column;
+  width: 80px;
+  padding: 15px;
+}
+.front img {
+  width: 65px;
+}
+.frontbox {
+  width: 65px;
+  height: 100px;
+  margin: 0;
+}
+.frontbox:hover {
+  border: 2px solid royalblue;
+  border-radius: 10px;
+}
+.semi-box2 .second-box {
+  width: 120px;
+  height: 140px;
+  background-color: #ecf2ff;
+  transform: translate(-77px, -110px);
+  border-radius: 20px;
+}
+#front-now {
+  transform: translate(28px, -17px);
+}
+#front-now img {
+  width: 65px;
+}
+.bar2 {
+  transform: translate(98px, -40px);
+  visibility: visible;
+  opacity: 1;
+  transition: .7s;
+}
+.gone {
+  display: none;
+}
+.more-box p {
+  font-size: 30px;
+  color: #202124;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 70px;
+}
+/*
+.covernot {
+  background-color: #ecf2ff;
+  transform: translate(-30px, -60px);
+  height: 40px;
+  width: 250px;
+  border-radius: 20px;
+}
+*/
+.visib {
+  /*background-image: url(../images1/log.png);*/
+}
+
+.adress-1 {
+  transform: translate(-7px, -35px);
+}
+.adress-2 {
+  transform: translate(-7px, 67px);
+}
+.star-1 {
+  transform: translate(-55px, -83px);
+}
+.adress-3 {
+  transform: translate(-55px, 18px);
+}
+
+
 
 /*=============== BASE ===============*/
 .add-on {
@@ -287,7 +401,7 @@ nav .menu li:hover a {
   }
   
   .add-on .floating__toggle img {
-    transition: transform .8s ease-in-out;
+    transition: transform .5s ease-in-out;
   }
   
   .add-on .floating__toggle:hover {

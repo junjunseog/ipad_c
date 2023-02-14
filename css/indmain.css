@@ -179,6 +179,81 @@ a {
 .container .logo img {
     width: 100%;
 }
+.semi-box1 {
+  visibility: hidden;
+  transition: .4s;
+  opacity: 0;
+}
+.bar1 {
+  visibility: visible;
+  opacity: 1;
+}
+.semi-post {
+  width: 220px;
+  font-size: 12px;
+  color: #202124;
+}
+.semi-post button {
+  transform: translate(28px,-185px);
+  height: 50px;
+  border-radius: 15px;
+  width: 300px;
+  background-color: #ecf2ff;
+  border: 2px solid #ecf2ff;
+}
+.semi-post button a {
+  color: #202124;
+}
+.semi-box2 {
+  visibility: hidden;
+  opacity: 0;
+  transition: .7s;
+}
+.semi-box2 .more-box {
+    width: 390px;
+    height: 140px;
+    background-color: #ecf2ff;
+    transform: translate(-85px, -150px);
+    border-radius: 30px;
+}
+.bar2 {
+  visibility: visible;
+  opacity: 1;
+  transition: .7s;
+}
+.gone {
+  display: none;
+}
+.more-box p {
+  font-size: 30px;
+  color: #202124;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 50px;
+}
+/*
+.covernot {
+  background-color: #ecf2ff;
+  transform: translate(-30px, -60px);
+  height: 40px;
+  width: 250px;
+  border-radius: 20px;
+}
+*/
+.visib {
+  /*background-image: url(../images1/log.png);*/
+}
+
+.adress-1 {
+  transform: translate(-7px, -35px);
+}
+.adress-2 {
+  transform: translate(195px, -2px);
+}
+.star-1 {
+  transform: translate(-55px, -83px);
+}
+
 
 /*=============== BASE ===============*/
 .add-on {
@@ -221,7 +296,7 @@ a {
   }
   
   .add-on .floating__toggle img {
-    transition: transform .8s ease-in-out;
+    transition: transform .5s ease-in-out;
   }
   
   .add-on .floating__toggle:hover {
