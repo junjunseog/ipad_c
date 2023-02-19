@@ -2788,8 +2788,9 @@ footer .legal ul li:hover a {
     padding: 0;
     margin: 0;
     position: fixed;
-    bottom: 5px;
-    left: 190px;
+    bottom: -115px;
+    left: 180px;
+    z-index: 10;
   }
 
   /*=============== BUTTON ===============*/
@@ -2948,7 +2949,7 @@ footer .legal ul li:hover a {
     width: 280px;
     height: 140px;
     background-color: #ecf2ff;
-    transform: translate(-100px, -110px);
+    transform: translate(-90px, -110px);
     border-radius: 20px;
     display: flex;
   }
@@ -2973,7 +2974,7 @@ footer .legal ul li:hover a {
     width: 120px;
     height: 140px;
     background-color: #ecf2ff;
-    transform: translate(-93px, -110px);
+    transform: translate(-85px, -110px);
     border-radius: 20px;
   }
   #front-now {

@@ -225,3 +225,158 @@ function showNextBtn () {
 function hideNextBtn () {
     nextEl.classList.remove('hiphop')
 }
+
+
+
+/*=============== SHOW & HIDE MENU ===============*/
+const toggleButtonEl = document.getElementById('floating-toggle');
+
+const activeMenuEl = () => {
+    toggleButtonEl.classList.toggle('active')
+}
+
+toggleButtonEl.addEventListener('click', activeMenuEl);
+
+
+const adressEl = document.getElementById('adress')
+const semiOneEl = document.querySelector('.semi-box1')
+
+adressEl.addEventListener('click', function() {
+    if (adressEl.classList.contains('change')) {
+        hideImg ()
+    }   else {
+        showImg ()
+    }
+})
+adressEl.addEventListener('click', function() {
+    if (semiOneEl.classList.contains('bar1')) {
+        hideAdress()
+    }   else {
+        showAdress()
+    }
+})
+
+
+function showAdress () {
+    semiOneEl.classList.add('bar1')
+}
+function hideAdress () {
+    semiOneEl.classList.remove('bar1')
+}
+function showImg () {
+    adressEl.classList.add('change')
+}
+function hideImg () {
+    adressEl.classList.remove('change')
+}
+
+const totalAddEl = document.getElementById('totaladd')
+const closeEl = document.getElementById('closeup')
+const semiTwoEl = document.querySelector('.semi-box2')
+const adressZeroEl = document.querySelector('.adress-0')
+const adressFirstEl = document.querySelector('.adress-1')
+const adressTwoEl = document.querySelector('.adress-2')
+const adressThirdEl = document.querySelector('.adress-3')
+const adressFourEl = document.querySelector('.star-1')
+const barEl = document.querySelector('.bar3')
+
+adressTwoEl.addEventListener('click', function() {
+    adressZeroEl.classList.toggle('gone')
+    adressFirstEl.classList.toggle('gone')
+    adressFourEl.classList.toggle('gone')
+    adressThirdEl.classList.toggle('gone')
+})
+
+adressFourEl.addEventListener('click', function() {
+    adressZeroEl.classList.toggle('gone')
+    adressFirstEl.classList.toggle('gone')
+    adressTwoEl.classList.toggle('gone')
+    adressThirdEl.classList.toggle('gone')
+})
+
+adressFourEl.addEventListener('click', function() {
+    if (barEl.classList.contains('barsave')) {
+        hideOnBush()
+    }   else {
+        showOnBush ()
+    }
+})
+
+function showOnBush () {
+    barEl.classList.add('barsave')
+}
+function hideOnBush () {
+    barEl.classList.remove('barsave')
+}
+
+totalAddEl.addEventListener('click', function() {
+    if (adressTwoEl.classList.contains('visib')) {
+        hideVisib ()
+    }   else {
+        showVisib ()
+    }
+})
+
+function showVisib () {
+    adressTwoEl.classList.add('visib')
+}
+
+function hideVisib () {
+    adressTwoEl.classList.remove('visib')
+}
+
+closeEl.addEventListener('click', function() {
+    if (semiTwoEl.classList.contains('bar2')) {
+        hideClose()
+    }   else {
+        showClose()
+    }
+})
+
+function showClose () {
+    semiTwoEl.classList.add('bar2')
+}
+function hideClose () {
+    semiTwoEl.classList.remove('bar2')
+}
+
+
+
+const valueEl = document.getElementById('floatingTextarea01')
+const cardTwoEl = document.getElementById('floatingTextarea02')
+const selectOneEl = document.getElementById('validationCustom04')
+const valueTwoTwoEl = document.getElementById('floatingTextarea2')
+const cardThreeEl = document.getElementById('floatingTextarea03')
+const cardFourEl = document.getElementById('floatingTextarea04')
+const cardFiveEl = document.getElementById('floatingTextarea05')
+const cardSixEl = document.getElementById('floatingTextarea06')
+const cardSevenEl = document.getElementById('floatingTextarea07')
+const cardEightEl = document.getElementById('floatingTextarea08')
+const SelectEl = document.getElementById('validationFormCheck31')
+const barBtnEl = document.querySelector('.bar3btn')
+
+
+function typing () {
+    valueEl.value = '0001';
+    cardTwoEl.value = '0002';
+    cardThreeEl.value = '0003';
+    cardFourEl.value = '0004';
+    cardFiveEl.value = '12';
+    cardSixEl.value = '23';
+    cardSevenEl.value = '**';
+    cardEightEl.value = '19990318';
+    SelectEl.checked == ture;
+}
+function nonetyping () {
+    valueEl.value = '';
+}
+
+const boardEl = document.querySelector('.mainboard')
+
+barBtnEl.addEventListener('click', function() {
+    if (valueEl.classList.contains('TEST')) {
+        nonetyping ()
+    }   else {
+        typing ()
+    }
+})

@@ -204,3 +204,153 @@ function showNextBtn () {
 function hideNextBtn () {
     nextEl.classList.remove('hiphop')
 }
+
+
+
+
+/*=============== SHOW & HIDE MENU ===============*/
+const toggleButtonEl = document.getElementById('floating-toggle');
+
+const activeMenuEl = () => {
+    toggleButtonEl.classList.toggle('active')
+}
+
+toggleButtonEl.addEventListener('click', activeMenuEl);
+
+
+const adressEl = document.getElementById('adress')
+const semiOneEl = document.querySelector('.semi-box1')
+
+adressEl.addEventListener('click', function() {
+    if (adressEl.classList.contains('change')) {
+        hideImg ()
+    }   else {
+        showImg ()
+    }
+})
+adressEl.addEventListener('click', function() {
+    if (semiOneEl.classList.contains('bar1')) {
+        hideAdress()
+    }   else {
+        showAdress()
+    }
+})
+
+
+function showAdress () {
+    semiOneEl.classList.add('bar1')
+}
+function hideAdress () {
+    semiOneEl.classList.remove('bar1')
+}
+function showImg () {
+    adressEl.classList.add('change')
+}
+function hideImg () {
+    adressEl.classList.remove('change')
+}
+
+const totalAddEl = document.getElementById('totaladd')
+const closeEl = document.getElementById('closeup')
+const semiTwoEl = document.querySelector('.semi-box2')
+const adressZeroEl = document.querySelector('.adress-0')
+const adressFirstEl = document.querySelector('.adress-1')
+const adressTwoEl = document.querySelector('.adress-2')
+const adressThirdEl = document.querySelector('.adress-3')
+const adressFourEl = document.querySelector('.star-1')
+const barEl = document.querySelector('.bar3')
+
+adressTwoEl.addEventListener('click', function() {
+    adressZeroEl.classList.toggle('gone')
+    adressFirstEl.classList.toggle('gone')
+    adressFourEl.classList.toggle('gone')
+    adressThirdEl.classList.toggle('gone')
+})
+
+adressFourEl.addEventListener('click', function() {
+    adressZeroEl.classList.toggle('gone')
+    adressFirstEl.classList.toggle('gone')
+    adressTwoEl.classList.toggle('gone')
+    adressThirdEl.classList.toggle('gone')
+})
+
+adressFourEl.addEventListener('click', function() {
+    if (barEl.classList.contains('barsave')) {
+        hideOnBush()
+    }   else {
+        showOnBush ()
+    }
+})
+
+function showOnBush () {
+    barEl.classList.add('barsave')
+}
+function hideOnBush () {
+    barEl.classList.remove('barsave')
+}
+
+totalAddEl.addEventListener('click', function() {
+    if (adressTwoEl.classList.contains('visib')) {
+        hideVisib ()
+    }   else {
+        showVisib ()
+    }
+})
+
+function showVisib () {
+    adressTwoEl.classList.add('visib')
+}
+
+function hideVisib () {
+    adressTwoEl.classList.remove('visib')
+}
+
+closeEl.addEventListener('click', function() {
+    if (semiTwoEl.classList.contains('bar2')) {
+        hideClose()
+    }   else {
+        showClose()
+    }
+})
+
+function showClose () {
+    semiTwoEl.classList.add('bar2')
+}
+function hideClose () {
+    semiTwoEl.classList.remove('bar2')
+}
+
+
+
+const valueEl = document.getElementById('floatingTextarea')
+const valueTwoEl = document.getElementById('floatingTextarea1')
+const selectOneEl = document.getElementById('validationCustom04')
+const valueTwoTwoEl = document.getElementById('floatingTextarea2')
+const valueThreeEl = document.getElementById('floatingTextarea3')
+const valueFourEl = document.getElementById('floatingTextarea4')
+const valueFiveEl = document.getElementById('floatingTextarea5')
+const valueSixEl = document.getElementById('floatingTextarea6')
+
+function typing () {
+    valueEl.value = '최';
+    valueTwoEl.value = '경로'
+    selectOneEl.value = '11'
+    valueTwoTwoEl.value = '광역시'
+    valueThreeEl.value = '47340'
+    valueFourEl.value = '부산광역시 부산진구 엄광로 176'
+    valueFiveEl.value = 'cgr23@deu.ac.kr'
+    valueSixEl.value = '01012345378'
+}
+function nonetyping () {
+    valueEl.value = '';
+}
+
+const boardEl = document.querySelector('.mainboard')
+
+boardEl.addEventListener('click', function() {
+    if (valueEl.classList.contains('TEST')) {
+        nonetyping ()
+    }   else {
+        typing ()
+    }
+})

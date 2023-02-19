@@ -278,7 +278,7 @@ nav .menu li:hover a {
   width: 280px;
   height: 140px;
   background-color: #ecf2ff;
-  transform: translate(-87px, -110px);
+  transform: translate(-90px, -110px);
   border-radius: 20px;
   display: flex;
 }
@@ -303,7 +303,7 @@ nav .menu li:hover a {
   width: 120px;
   height: 140px;
   background-color: #ecf2ff;
-  transform: translate(-77px, -110px);
+  transform: translate(-83px, -110px);
   border-radius: 20px;
 }
 #front-now {
@@ -362,8 +362,10 @@ nav .menu li:hover a {
     padding: 0;
     margin: 0;
     z-index: 10;
-    position: relative;
-    bottom: 350px;
+    position: fixed;
+    bottom: -115px;
+    left: 180px;
+    z-index: 10;
 
   }
 
