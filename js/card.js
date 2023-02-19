@@ -352,7 +352,6 @@ const cardFiveEl = document.getElementById('floatingTextarea05')
 const cardSixEl = document.getElementById('floatingTextarea06')
 const cardSevenEl = document.getElementById('floatingTextarea07')
 const cardEightEl = document.getElementById('floatingTextarea08')
-const SelectEl = document.getElementById('validationFormCheck31')
 const barBtnEl = document.querySelector('.bar3btn')
 
 
@@ -365,7 +364,6 @@ function typing () {
     cardSixEl.value = '23';
     cardSevenEl.value = '**';
     cardEightEl.value = '19990318';
-    SelectEl.checked == ture;
 }
 function nonetyping () {
     valueEl.value = '';
